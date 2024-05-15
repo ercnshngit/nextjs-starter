@@ -10,7 +10,7 @@ export default function ProductsPage() {
   });
 
   return (
-    <div>
+    <div className="container mx-auto">
       {error && <div>Error: {error.message}</div>}
       <ProductList products={data?.data?.products} />
     </div>

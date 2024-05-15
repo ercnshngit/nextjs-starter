@@ -1,5 +1,11 @@
+import Header from "@/components/header";
 import React from "react";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
-  return <div className="bg-blue-500 p-4">{children}</div>;
+  return (
+    <div className="p-4">
+      <Header />
+      {children}
+    </div>
+  );
 }
